@@ -1,0 +1,332 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+html {
+  background-color: #eff1f2;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.body-wrapper {
+  background-color: #eff1f2;
+  min-height: 100%;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.header {
+  box-sizing: content-box;
+  height: 60px;
+  padding-top: 20px;
+}
+
+h2 {
+  font-weight: 1000;
+  font-size: 40px;
+}
+
+.logo-wrapper {
+  height: 60px;
+}
+
+.logo {
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  width: auto;
+}
+
+.tooltip-help {
+  border: solid 3px #606060;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  height: 35px;
+  margin: 15px auto 0;
+  position: relative;
+  width: 35px;
+}
+
+.tooltip-help:hover {
+  cursor: pointer;
+}
+
+.tooltip-help::before {
+  content: '?';
+}
+
+.opt-button-group {
+  padding-top: 30px;
+}
+
+.opt-button {
+  border-radius: 12px;
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.opt-button:hover {
+  color: #fff;
+}
+
+.opt1, .opt-button-list {
+  background-color: #fb8426;
+}
+
+.opt-button-list {
+  font-size: 14px;
+  white-space: normal;
+}
+
+.opt1:hover, .opt-button-list:hover {
+  background-color: #c15a09;
+}
+
+.opt2 {
+  background-color: #606060;
+}
+
+.question-container {
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+
+.question-container li {
+  font-size: 18px;
+  list-style-position: inside;
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+.question-container ul {
+  padding: 20px 0;
+}
+
+.opt2:hover {
+  background-color: #323232;
+}
+
+.tooltip-help-message {
+  display: none;
+}
+
+.tooltip-help-message::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border: solid 15px transparent;
+  border-bottom: solid 25px #000;
+  position: absolute;
+  top: -28px;
+  left: 62px;
+}
+
+.tooltip-help:hover .tooltip-help-message {
+  background-color: #000;
+  border-radius: 15px;
+  box-sizing: content-box;
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  left: -62px;
+  padding: 15px;
+  position: absolute;
+  top: 55px;
+  width: 125px;
+  z-index: 1;
+}
+
+.tooltip-help-message p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.lh-logo {
+  height: 24px;
+  width: auto;
+  margin-left: 15px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+
+}
+
+p {
+  font-size: 18px;
+}
+
+.real-estate-option {
+  background-size: cover;
+  background-position: center;
+  width: 70%;
+  max-width: 280px;
+  min-height: 170px;
+  margin: 0 auto;
+  border: solid 4px #fb8426;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.real-estate-info {
+  background-color: rgba(0, 0, 0, .6);
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  border-radius: 0 0 7px 7px;
+}
+
+.real-estate-info p {
+  margin-bottom: 4px;
+}
+
+.real-estate-info .lower-info {
+  font-size: 11px;
+}
+
+.real-estate-info .name {
+  font-size: 15px;
+}
+
+.app-wrapper {
+  align-items: flex-start;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: left 1s;
+  width: 200%;
+  padding: 80px 0 60px;
+}
+
+.app-wrapper .slides {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-wrapper .finish {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+.finish .question-container {
+  padding: 20px 0;
+}
+
+.slides-wrapper {
+  align-items: flex-start;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: left 1s;
+  width: 800%;
+}
+
+.step {
+  position: relative;
+  height: 100%;
+  width: 20%;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.content-wrapper {
+  background-color: #eff1f2;
+  min-height: 100%;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-wrapper {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.error {
+  
+  border: solid 1px #fb8426;
+  box-shadow: 0 0 4px 1px #fb8426;
+}
+
+.input-container {
+  position: relative;
+}
+
+.error-label {
+  font-size: 9px;
+  font-weight: bold;
+  display: block;
+  position: absolute;
+  background-color: #fb8426;
+  padding: 3px;
+  border-radius: 4px 4px 0 0;
+  color: #fff;
+  right: 4px;
+  top: 7px;
+}
+
+.real-estate-option a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  min-height: 150px;
+}
+
+/* ----------------------------- MEDIA QUERIES ----------------------------- */
+
+@media (max-width: 991px) {
+  .real-estate-option {
+    width: 90%;
+  }
+}
+
+.fa-times-circle {
+  color: #f44;
+}
+
+.fa-check-circle {
+  color: #4a4;
+}
