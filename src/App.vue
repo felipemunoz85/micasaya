@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-md-12 text-center">
             <div class="logo-wrapper">
-              <img class="logo" src="src/assets/images/micasaya-logo.png">
+              <img class="logo" src="./assets/images/micasaya-logo.png">
             </div>
           </div>
         </div>
@@ -190,7 +190,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12 text-right">
-            HECHO POR <a href="https://www.lahaus.com"><img src="src/assets/images/logo-lh-crop.gif" class="lh-logo"></a>
+            HECHO POR <a href="https://www.lahaus.com"><img src="./assets/images/logo-lh-crop.gif" class="lh-logo"></a>
           </div>
         </div>
       </div>
