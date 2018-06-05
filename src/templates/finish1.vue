@@ -24,7 +24,16 @@
     <br>
     <div class="row">
       <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 text-center">
-         <button class="btn btn-default opt-button opt1">Aprende más sobre el programa</button>
+        <a v-if="subsidyType === 'Cuota Inicial'"
+           class="btn btn-default opt-button opt1"
+           href="http://www.micasaya.gov.co/cuota-inicial/">
+          Aprende más sobre el programa
+        </a>
+        <a v-if="subsidyType === 'Tasa de Interés'"
+           class="btn btn-default opt-button opt1"
+           href="http://www.micasaya.gov.co/subsidio-a-la-tasa-de-interes-vip-vis/">
+          Aprende más sobre el programa
+        </a>
       </div>
     </div>
   </div>
@@ -40,7 +49,7 @@
       nonPreviousSubsidy: {
         type: Boolean,
         default: false
-      }, 
+      },
       preapproved: {
         type: Boolean,
         default: false

@@ -82,8 +82,8 @@
                 <div class="row opt-button-group">
                   <div class="col-md-2 col-md-offset-5 text-center">
                     <button class="btn btn-default opt-button opt-button-list" @click="setValue('budget_type', 1)">Inferior a $105 millones</button>
-                     <button class="btn btn-default opt-button opt-button-list" @click="setValue('budget_type', 2)">Entre $105 y $320 millones</button>
-                     <button class="btn btn-default opt-button opt-button-list" @click="setValue('budget_type', 3)">Superior a $320 millones</button>
+                     <button class="btn btn-default opt-button opt-button-list" @click="setValue('budget_type', 2)">Entre $105 y $339 millones</button>
+                     <button class="btn btn-default opt-button opt-button-list" @click="setValue('budget_type', 3)">Superior a $339 millones</button>
                   </div>
                 </div>
               </div>
@@ -159,7 +159,7 @@
         </div>
         <div class="finish">
           <template v-if="finish == 'finish1'">
-            <finish1 
+            <finish1
             v-bind:subsidyType="userData.subsidy_type"
             v-bind:nonPropietary="userData.non_propietary"
             v-bind:preapproved="userData.pre_approved"
@@ -184,7 +184,7 @@
           </template>
         </div>
       </div>
-      
+
     </div>
     <footer>
       <div class="container-fluid">
@@ -214,7 +214,7 @@ export default {
   },
   data() {
     return {
-      numSlides: 10, 
+      numSlides: 10,
       currentSlide: 1,
       userData: {
         budget_type: null,
@@ -235,7 +235,7 @@ export default {
     },
     appPhase : function(){
       return ((this.phase - 1) * - 100) + '%';
-    }  
+    }
   },
   methods: {
     next: function(){
