@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-md-12 text-center">
             <div class="logo-wrapper">
-              <img class="logo" src="src/assets/images/micasaya-logo.png">
+              <img class="logo" src="./assets/images/micasaya-logo.png">
             </div>
           </div>
         </div>
@@ -159,7 +159,7 @@
         </div>
         <div class="finish">
           <template v-if="finish == 'finish1'">
-            <finish1 
+            <finish1
             v-bind:subsidyType="userData.subsidy_type"
             v-bind:nonPropietary="userData.non_propietary"
             v-bind:preapproved="userData.pre_approved"
@@ -184,13 +184,13 @@
           </template>
         </div>
       </div>
-      
+
     </div>
     <footer>
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12 text-right">
-            HECHO POR <a href="https://www.lahaus.com"><img src="src/assets/images/logo-lh-crop.gif" class="lh-logo"></a>
+            HECHO POR <a href="https://www.lahaus.com"><img src="./assets/images/logo-lh-crop.gif" class="lh-logo"></a>
           </div>
         </div>
       </div>
@@ -214,7 +214,7 @@ export default {
   },
   data() {
     return {
-      numSlides: 10, 
+      numSlides: 10,
       currentSlide: 1,
       userData: {
         budget_type: null,
@@ -235,7 +235,7 @@ export default {
     },
     appPhase : function(){
       return ((this.phase - 1) * - 100) + '%';
-    }  
+    }
   },
   methods: {
     next: function(){
