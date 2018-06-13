@@ -25,12 +25,12 @@
     <div class="row">
       <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 text-center">
         <a v-if="subsidyType === 'Cuota Inicial'"
-           class="btn btn-default opt-button opt1"
+           class="btn btn-default opt-button opt1 ga-cuota-inicial-aprender-mas-btn"
            href="http://www.micasaya.gov.co/cuota-inicial/">
           Aprende más sobre el programa
         </a>
         <a v-if="subsidyType === 'Tasa de Interés'"
-           class="btn btn-default opt-button opt1"
+           class="btn btn-default opt-button opt1 ga-tasa-interes-aprender-mas-btn"
            href="http://www.micasaya.gov.co/subsidio-a-la-tasa-de-interes-vip-vis/">
           Aprende más sobre el programa
         </a>

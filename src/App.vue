@@ -24,7 +24,7 @@
                 </div>
                 <div class="row opt-button-group">
                   <div class="col-md-2 col-md-offset-5 text-center">
-                    <button class="btn btn-default opt-button opt1" @click="next()">¡Comencemos!</button>
+                    <button class="btn btn-default opt-button opt1 ga-comencemos" @click="next()">¡Comencemos!</button>
                   </div>
                 </div>
               </div>
@@ -38,9 +38,9 @@
                 </div>
                 <div class="row opt-button-group">
                   <div class="col-md-2 col-md-offset-5 text-center">
-                    <button class="btn btn-default opt-button opt-button-list" @click="setValue('city', 'Bogotá')">Bogotá y alrededores</button>
-                     <button class="btn btn-default opt-button opt-button-list" @click="setValue('city', 'Medellín')">Medellín y alrededores</button>
-                     <button class="btn btn-default opt-button opt-button-list" @click="setValue('city', 'Other')">Otras ciudades</button>
+                    <button class="btn btn-default opt-button opt-button-list ga-bogota-alrededores" @click="setValue('city', 'Bogotá')">Bogotá y alrededores</button>
+                    <button class="btn btn-default opt-button opt-button-list ga-medellin-alrededores" @click="setValue('city', 'Medellín')">Medellín y alrededores</button>
+                    <button class="btn btn-default opt-button opt-button-list ga-otras-ciudades" @click="setValue('city', 'Other')">Otras ciudades</button>
                   </div>
                 </div>
               </div>
@@ -54,7 +54,7 @@
                 </div>
                 <div class="row opt-button-group">
                   <div class="col-md-2 col-md-offset-4 text-center">
-                    <button class="btn btn-default opt-button opt1" @click="setValue('subsidy_type', 'Cuota Inicial')">Cuota Inicial</button>
+                    <button class="btn btn-default opt-button opt1 ga-cuota-inicial" @click="setValue('subsidy_type', 'Cuota Inicial')">Cuota Inicial</button>
                     <div class="tooltip-help">
                       <div class="tooltip-help-message">
                         <p>Podrás recibir un subsidio de hasta  20 smmlv para la cuota inicial de tu vivienda nueva.</p>
@@ -62,7 +62,7 @@
                     </div>
                   </div>
                   <div class="col-md-2 text-center">
-                    <button class="btn btn-default opt-button opt2" @click="setValue('subsidy_type', 'Tasa de Interés')">Tasa de Interés</button>
+                    <button class="btn btn-default opt-button opt2 ga-tasa-interes" @click="setValue('subsidy_type', 'Tasa de Interés')">Tasa de Interés</button>
                     <div class="tooltip-help">
                       <div class="tooltip-help-message">
                         <p>Podrás recibir una disminución 2,5 puntos porcentuales en la tasa de interés en crédito para compra de vivienda nueva durante los primeros 7 años.</p>
@@ -81,9 +81,9 @@
                 </div>
                 <div class="row opt-button-group">
                   <div class="col-md-2 col-md-offset-5 text-center">
-                    <button class="btn btn-default opt-button opt-button-list" @click="setValue('budget_type', 1)">Inferior a $105 millones</button>
-                     <button class="btn btn-default opt-button opt-button-list" @click="setValue('budget_type', 2)">Entre $105 y $339 millones</button>
-                     <button class="btn btn-default opt-button opt-button-list" @click="setValue('budget_type', 3)">Superior a $339 millones</button>
+                    <button class="btn btn-default opt-button opt-button-list ga-presupuesto-menos-105" @click="setValue('budget_type', 1)">Inferior a $105 millones</button>
+                    <button class="btn btn-default opt-button opt-button-list ga-presupuesto-105-339" @click="setValue('budget_type', 2)">Entre $105 y $339 millones</button>
+                    <button class="btn btn-default opt-button opt-button-list ga-presupuesto-mayor-339" @click="setValue('budget_type', 3)">Superior a $339 millones</button>
                   </div>
                 </div>
               </div>
@@ -97,9 +97,9 @@
                 </div>
                 <div class="row opt-button-group">
                   <div class="col-md-2 col-md-offset-5 text-center">
-                    <button class="btn btn-default opt-button opt-button-list" @click="setValue('monthly_income', 1)">Menos de $1'475 434</button>
-                     <button class="btn btn-default opt-button opt-button-list" @click="setValue('monthly_income', 2)">Entre $1'475 434 y $2'950 868</button>
-                     <button class="btn btn-default opt-button opt-button-list" @click="setValue('monthly_income', 3)">Superior a $2'950 868</button>
+                    <button class="btn btn-default opt-button opt-button-list ga-salario-menos-1.4" @click="setValue('monthly_income', 1)">Menos de $1'475 434</button>
+                    <button class="btn btn-default opt-button opt-button-list ga-salario-1.4-2.9" @click="setValue('monthly_income', 2)">Entre $1'475 434 y $2'950 868</button>
+                    <button class="btn btn-default opt-button opt-button-list ga-salario-mayor-2.9" @click="setValue('monthly_income', 3)">Superior a $2'950 868</button>
                   </div>
                 </div>
               </div>
@@ -113,10 +113,10 @@
                 </div>
                 <div class="row opt-button-group">
                   <div class="col-md-2 col-md-offset-4 text-center">
-                    <button class="btn btn-default opt-button opt1" @click="setValue('non_previous_subsidy', false)">Sí</button>
+                    <button class="btn btn-default opt-button opt1 ga-con-subsidio" @click="setValue('non_previous_subsidy', false)">Sí</button>
                   </div>
                   <div class="col-md-2 text-center">
-                    <button class="btn btn-default opt-button opt2" @click="setValue('non_previous_subsidy', true)">No</button>
+                    <button class="btn btn-default opt-button opt2 ga-sin-subsidio" @click="setValue('non_previous_subsidy', true)">No</button>
                   </div>
                 </div>
               </div>
@@ -130,10 +130,10 @@
                 </div>
                 <div class="row opt-button-group">
                   <div class="col-md-2 col-md-offset-4 text-center">
-                    <button class="btn btn-default opt-button opt1" @click="setValue('non_propietary', false)">Sí</button>
+                    <button class="btn btn-default opt-button opt1 ga-con-vivienda" @click="setValue('non_propietary', false)">Sí</button>
                   </div>
                   <div class="col-md-2 text-center">
-                    <button class="btn btn-default opt-button opt2" @click="setValue('non_propietary', true)">No</button>
+                    <button class="btn btn-default opt-button opt2 ga-sin-vivienda" @click="setValue('non_propietary', true)">No</button>
                   </div>
                 </div>
               </div>
@@ -147,10 +147,10 @@
                 </div>
                 <div class="row opt-button-group">
                   <div class="col-md-2 col-md-offset-4 text-center">
-                    <button class="btn btn-default opt-button opt1" @click="setValue('pre_approved', true)">Sí</button>
+                    <button class="btn btn-default opt-button opt1 ga-con-preaprobado" @click="setValue('pre_approved', true)">Sí</button>
                   </div>
                   <div class="col-md-2 text-center">
-                    <button class="btn btn-default opt-button opt2" @click="setValue('pre_approved', false)">No</button>
+                    <button class="btn btn-default opt-button opt2 ga-sin-preaprobado" @click="setValue('pre_approved', false)">No</button>
                   </div>
                 </div>
               </div>
